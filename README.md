@@ -1,5 +1,7 @@
 # MechaCar_Statistical_Analysis
 R
+
+## Linear Regression to Predict MPG
 >Call:
 lm(formula = mpg ~ vehicle_length + vehicle_weight + spoiler_angle + 
     ground_clearance + AWD, data = mecha_car_mpg)
@@ -10,7 +12,7 @@ Coefficients:
 ground_clearance               AWD  
        3.546e+00        -3.411e+00 
        
-       
+ ## Summary Statistics on Suspension Coils    
  >>> 
 Call:
 lm(formula = mpg ~ vehicle_length + vehicle_weight + spoiler_angle + 
@@ -35,7 +37,7 @@ Residual standard error: 8.774 on 44 degrees of freedom
 Multiple R-squared:  0.7149,	Adjusted R-squared:  0.6825 
 F-statistic: 22.07 on 5 and 44 DF,  p-value: 5.35e-11      
        
->>>>> 
+## T-Tests on Suspension Coils
 >   t.test(susp_coil$PSI, mu = 1500)
 
 	One Sample t-test
@@ -48,7 +50,9 @@ alternative hypothesis: true mean is not equal to 1500
 sample estimates:
 mean of x 
   1498.78
-  
+ 
+ 
+ ## Study Design: MechaCar vs Competition
   
   ![image](https://user-images.githubusercontent.com/96274446/163299845-7592727b-fe3b-4626-9bad-1cdf7e5f9ce9.png)
 
