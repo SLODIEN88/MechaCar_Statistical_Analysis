@@ -3,8 +3,8 @@ R
 ## Overview
 The purpose of this analysis is to help the data analytics team to review the production data for insights that may help the manufacturing team with the new car model; MechaCar
 ## Linear Regression to Predict MPG
->Call:
-lm(formula = mpg ~ vehicle_length + vehicle_weight + spoiler_angle + 
+
+> lm(formula = mpg ~ vehicle_length + vehicle_weight + spoiler_angle + 
     ground_clearance + AWD, data = mecha_car_mpg)
 
 Coefficients:
@@ -13,8 +13,6 @@ Coefficients:
 ground_clearance               AWD  
        3.546e+00        -3.411e+00 
        
- ## Summary Statistics on Suspension Coils    
- >>> 
 Call:
 lm(formula = mpg ~ vehicle_length + vehicle_weight + spoiler_angle + 
     ground_clearance + AWD, data = mecha_car_mpg)
@@ -39,16 +37,16 @@ Multiple R-squared:  0.7149,	Adjusted R-squared:  0.6825
 F-statistic: 22.07 on 5 and 44 DF,  p-value: 5.35e-11      
 
 
+
 ## Summary Statistics on Suspension Coils
 
   ![image](https://user-images.githubusercontent.com/96274446/163299845-7592727b-fe3b-4626-9bad-1cdf7e5f9ce9.png)
 
-  
   ![image](https://user-images.githubusercontent.com/96274446/163299684-ca76c261-8365-48b2-a802-0e99165d34f0.png)
+As we can see from the above, the current manufacturing data meets the 100 PSI (pounds per square inch) variance limitation and the design specifications for all the lots in total. However, when separated by Lots, LOT 3 is showing a higher variance which might because the lots are not specific, they are chosen randomly. 
   
 ## T-Tests on Suspension Coils
 >   t.test(susp_coil$PSI, mu = 1500)
-
 	One Sample t-test
 
 data:  susp_coil$PSI
