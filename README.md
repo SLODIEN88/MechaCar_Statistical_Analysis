@@ -1,6 +1,7 @@
 # MechaCar_Statistical_Analysis
 R
-##Overview
+## Overview
+The purpose of this analysis is to help the data analytics team to review the production data for insights that may help the manufacturing team with the new car model; MechaCar
 ## Linear Regression to Predict MPG
 >Call:
 lm(formula = mpg ~ vehicle_length + vehicle_weight + spoiler_angle + 
