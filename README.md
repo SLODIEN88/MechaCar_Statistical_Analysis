@@ -57,7 +57,34 @@ alternative hypothesis: true mean is not equal to 1500
 sample estimates:
 mean of x 
   1498.78
- 
+  
+> # p-value = 1
+> t.test(Lot2$PSI, mu = 1500)
+
+	One Sample t-test
+
+data:  Lot2$PSI
+t = 0.51745, df = 49, p-value = 0.6072
+alternative hypothesis: true mean is not equal to 1500
+95 percent confidence interval:
+ 1499.423 1500.977
+sample estimates:
+mean of x 
+   1500.2
+   
+> # p-value = 0.04168
+> t.test(Lot3$PSI, mu = 1500)
+
+	One Sample t-test
+
+data:  Lot3$PSI
+t = -2.0916, df = 49, p-value = 0.04168
+alternative hypothesis: true mean is not equal to 1500
+95 percent confidence interval:
+ 1492.431 1499.849
+sample estimates:
+mean of x 
+  1496.14
  
  ## Study Design: MechaCar vs Competition
  Another statistical study would be doing a linear regression on hybrid cars. With the popularity increasing and the rise of gas prices, it will be beneficial perform this especially in "expensive" cities likes San Francisco or Seatle. 
