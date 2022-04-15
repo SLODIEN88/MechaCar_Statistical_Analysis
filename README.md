@@ -90,4 +90,7 @@ mean of x
  Another statistical study would be doing a linear regression on hybrid cars. With the popularity increasing and the rise of gas prices, it will be beneficial perform this especially in "expensive" cities likes San Francisco or Seatle. 
  
  compare the differences in average highway fuel economy (hwy) of Toyota vehicles as a function of the different cylinder sizes
-
+What metric or metrics are you going to test? Highway fuel efficiecy
+What is the null hypothesis or alternative hypothesis?
+What statistical test would you use to test the hypothesis? And why?
+What data is needed to run the statistical test?
