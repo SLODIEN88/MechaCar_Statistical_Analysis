@@ -88,4 +88,6 @@ mean of x
  
  ## Study Design: MechaCar vs Competition
  Another statistical study would be doing a linear regression on hybrid cars. With the popularity increasing and the rise of gas prices, it will be beneficial perform this especially in "expensive" cities likes San Francisco or Seatle. 
+ 
+ compare the differences in average highway fuel economy (hwy) of Toyota vehicles as a function of the different cylinder sizes
 
