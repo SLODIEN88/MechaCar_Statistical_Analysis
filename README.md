@@ -2,9 +2,10 @@
 R
 ## Overview
 The purpose of this analysis is to help the data analytics team to review the production data for insights that may help the manufacturing team with the new car model; MechaCar
+
 ## Linear Regression to Predict MPG
 
-> lm(formula = mpg ~ vehicle_length + vehicle_weight + spoiler_angle + 
+lm(formula = mpg ~ vehicle_length + vehicle_weight + spoiler_angle + 
     ground_clearance + AWD, data = mecha_car_mpg)
 
 Coefficients:
@@ -34,9 +35,9 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 
 Residual standard error: 8.774 on 44 degrees of freedom
 Multiple R-squared:  0.7149,	Adjusted R-squared:  0.6825 
-F-statistic: 22.07 on 5 and 44 DF,  p-value: 5.35e-11      
+F-statistic: 22.07 on 5 and 44 DF,  p-value: 5.35e-11   
 
-
+The R-squared value is 0.6825 which means roughly 68% of the variability of our dependent variable is explained using this linear model. The p-value is 5.35e-11 which is smaller that our assumed significance level of 0.05%. Therefore there is sufficient evidence to reject the null hypothesis. 
 
 ## Summary Statistics on Suspension Coils
 
