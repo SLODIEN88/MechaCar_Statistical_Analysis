@@ -43,7 +43,8 @@ F-statistic: 22.07 on 5 and 44 DF,  p-value: 5.35e-11
   ![image](https://user-images.githubusercontent.com/96274446/163299845-7592727b-fe3b-4626-9bad-1cdf7e5f9ce9.png)
 
   ![image](https://user-images.githubusercontent.com/96274446/163299684-ca76c261-8365-48b2-a802-0e99165d34f0.png)
-As we can see from the above, the current manufacturing data meets the 100 PSI (pounds per square inch) variance limitation and the design specifications for all the lots in total. However, when separated by Lots, LOT 3 is showing a higher variance which might because the lots are not specific, they are chosen randomly. 
+
+As we can see from the above, the current manufacturing data meets the 100 PSI (pounds per square inch) variance limitation and the design specifications for all the lots in total. However, when separated by Lots, LOT 3 is showing a higher variance which might because the lots are not specific, they are chosen randomly. These metrics include vehicle length, weight, spoiler angle, ground clearance, AWD Capabilities, MPG and PSI.
   
 ## T-Tests on Suspension Coils
 >   t.test(susp_coil$PSI, mu = 1500)
@@ -72,6 +73,20 @@ sample estimates:
 mean of x 
    1500.2
    
+> # p-value = 0.6072
+> t.test(Lot3$PSI, mu = 1500)
+
+	One Sample t-test
+
+data:  Lot3$PSI
+t = -2.0916, df = 49, p-value = 0.04168
+alternative hypothesis: true mean is not equal to 1500
+95 percent confidence interval:
+ 1492.431 1499.849
+sample estimates:
+mean of x 
+  1496.14
+   
 > # p-value = 0.04168
 > t.test(Lot3$PSI, mu = 1500)
 
@@ -85,12 +100,14 @@ alternative hypothesis: true mean is not equal to 1500
 sample estimates:
 mean of x 
   1496.14
+  
+Lot 1, Lot 2, Lot 3 all have a significance level of 0.05, hence we fail to reject the null hypothesis since p-value equlaea 1, 0.06072 and 0.04168 respectively. 
  
  ## Study Design: MechaCar vs Competition
- Another statistical study would be doing a linear regression on hybrid cars. With the popularity increasing and the rise of gas prices, it will be beneficial perform this especially in "expensive" cities likes San Francisco or Seatle. 
+ Another statistical study would be doing a linear regression on city and highway fuel efficiency. With the popularity increasing and the rise of gas prices, it will be beneficial perform this especially in "expensive" cities likes San Francisco or Seatle. 
  
- compare the differences in average highway fuel economy (hwy) of Toyota vehicles as a function of the different cylinder sizes
-What metric or metrics are you going to test? Highway fuel efficiecy
+compare the differences in average highway fuel economy (hwy) of Toyota vehicles as a function of the different cylinder sizes
+City and Highway fuel efficiecy would be the dependent variable, Horse Power, Vehicle length, AWD capabilities would be independent variables. 
 What is the null hypothesis or alternative hypothesis?
 What statistical test would you use to test the hypothesis? And why?
 What data is needed to run the statistical test?
