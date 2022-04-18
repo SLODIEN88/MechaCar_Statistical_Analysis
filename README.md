@@ -104,7 +104,7 @@ mean of x
   
 Lot 1, Lot 2, Lot 3 all have a significance level of 0.05, hence we fail to reject the null hypothesis since p-value equlaea 1, 0.06072 and 0.04168 respectively.Aand we can confirm our three samples are not statistically different.
  
-## Study Design: MechaCar vs Competition
+# Study Design: MechaCar vs Competition
 Another statistical study would be doing a linear regression on city and highway fuel efficiency. With the popularity increasing and the rise of gas prices, it will be beneficial perform this especially in "expensive" cities likes San Francisco or Seatle. 
-# Hypothesis
+## Hypothesis
 Ho(null hypothesis): MechaCar has fuel efficiency compared to competitors with the same gas cylinder. Ha(alternative): MechaCar does not have fuel efficiency complated to competitors with the same gas cylinder. We will need to collect data from competitors to complete this analysis. We would use the t-test to understand MPG and AWD capabalities. 
