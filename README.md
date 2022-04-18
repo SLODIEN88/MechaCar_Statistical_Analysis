@@ -101,7 +101,7 @@ sample estimates:
 mean of x 
   1496.14
   
-Lot 1, Lot 2, Lot 3 all have a significance level of 0.05, hence we fail to reject the null hypothesis since p-value equlaea 1, 0.06072 and 0.04168 respectively. 
+Lot 1, Lot 2, Lot 3 all have a significance level of 0.05, hence we fail to reject the null hypothesis since p-value equlaea 1, 0.06072 and 0.04168 respectively.Aand we can confirm our three samples are not statistically different.
  
  ## Study Design: MechaCar vs Competition
  Another statistical study would be doing a linear regression on city and highway fuel efficiency. With the popularity increasing and the rise of gas prices, it will be beneficial perform this especially in "expensive" cities likes San Francisco or Seatle. 
